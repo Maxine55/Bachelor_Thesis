@@ -168,7 +168,7 @@ CO2bio = DATEN_merged["CO2"] - DATEN_merged["CO2_JFJ"] - CO2ff
 #plot D14C & CO2ff & CO2bio:
 fig, axs = plt.subplots(nrows=3, ncols=1, sharex=True, figsize=(8, 6))
 
-axs[0].plot(DATEN_merged["Monat"], DATEN_merged["D14CO2"], ".",color="blue", label="$\Delta^{14}\mathrm{C}$ Beromünster ")
+axs[0].plot(DATEN_merged["Monat"], DATEN_merged["D14CO2"], ".",color="blue", label="$\Delta^{14}\mathrm{C}$ Bern ")
 axs[0].plot(DATEN_merged["Monat"], DATEN_merged["D14CO2"], color="grey")
 axs[0].fill_between(DATEN_merged["Monat"], DATEN_merged["D14CO2"] - DATEN_merged["D14CO2_err"], DATEN_merged["D14CO2"] + DATEN_merged["D14CO2_err"], color="blue",alpha=0.2)
 axs[0].plot(DATEN_merged["Monat"], DATEN_merged["D14C_JFJ"], ".",color="purple", label="$\Delta^{14}\mathrm{C}$ Jungfraujoch ")
@@ -284,7 +284,7 @@ CO2bio_beidecorr = DATEN_merged["CO2"] - DATEN_merged["CO2_JFJ"] - CO2ff_beideco
 
 fig, axs = plt.subplots(nrows=3, ncols=1, sharex=True, figsize=(8, 6))
 
-axs[0].plot(DATEN_merged["Monat"], DATEN_merged["D14CO2"], ".",color="blue", label="$\Delta^{14}\mathrm{C}$ Beromünster ")
+axs[0].plot(DATEN_merged["Monat"], DATEN_merged["D14CO2"], ".",color="blue", label="$\Delta^{14}\mathrm{C}$ Bern ")
 axs[0].plot(DATEN_merged["Monat"], DATEN_merged["D14CO2"], color="grey")
 axs[0].fill_between(DATEN_merged["Monat"], DATEN_merged["D14CO2"] - DATEN_merged["D14CO2_err"], DATEN_merged["D14CO2"] + DATEN_merged["D14CO2_err"], color="blue",alpha=0.2)
 axs[0].plot(DATEN_merged["Monat"], DATEN_merged["D14C_JFJ"], ".",color="purple", label="$\Delta^{14}\mathrm{C}$ Jungfraujoch ")
@@ -350,7 +350,7 @@ s_CO2bio = np.sqrt(s_CO2meas**2 + s_CO2bg**2 + s_CO2ff**2)
 fig, axs = plt.subplots(nrows=3, ncols=1, sharex=True, figsize=(8, 6))
 
 axs[0].plot(DATEN_merged["Monat"], DATEN_merged["D14CO2"], color="grey")
-axs[0].plot(DATEN_merged["Monat"], DATEN_merged["D14CO2"], ".",color="blue", label="$\Delta^{14}\mathrm{C}$ Beromünster ")
+axs[0].plot(DATEN_merged["Monat"], DATEN_merged["D14CO2"], ".",color="blue", label="$\Delta^{14}\mathrm{C}$ Bern ")
 axs[0].fill_between(DATEN_merged["Monat"], DATEN_merged["D14CO2"] - DATEN_merged["D14CO2_err"], DATEN_merged["D14CO2"] + DATEN_merged["D14CO2_err"], color="blue",alpha=0.2)
 axs[0].plot(DATEN_merged["Monat"], DATEN_merged["D14C_JFJ"], color="red")
 axs[0].plot(DATEN_merged["Monat"], DATEN_merged["D14C_JFJ"], ".",color="purple",label="$\Delta^{14}\mathrm{C}$ Jungfraujoch")
